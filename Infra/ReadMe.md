@@ -6,8 +6,6 @@ Ensure that you are in the infra folder of your project and run the following co
 
 docker-compose up -d
 
-You should see:
-
 ## KeyCloak (Auth)
 
 Information on KeyCloak can be found [here](https://www.keycloak.org/)
