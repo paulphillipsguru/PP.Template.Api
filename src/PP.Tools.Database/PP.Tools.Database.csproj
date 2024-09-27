@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="appsettings.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentMigrator" Version="6.0.0" />
+    <PackageReference Include="FluentMigrator.Runner" Version="6.0.0" />
+    <PackageReference Include="FluentMigrator.Runner.SqlServer" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="9.0.0-rc.1.24431.7" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.0-rc.1.24431.7" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.0-rc.1.24431.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PP.Common.Shared\PP.Common.Shared.csproj" />
+    <ProjectReference Include="..\PP.Template.Infrastructure\PP.Template.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

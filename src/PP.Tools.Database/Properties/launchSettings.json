@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "PP.Tools.Database": {
+      "commandName": "Project",
+      "commandLineArgs": "down 1"
+    }
+  }
+}
