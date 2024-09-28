@@ -22,7 +22,7 @@ Password: password
 
 Information on MailHog: https://github.com/mailhog/MailHog
 
-Url: localhost; 8025
+Url: localhost: 8025
 
 ## Sql Server
 

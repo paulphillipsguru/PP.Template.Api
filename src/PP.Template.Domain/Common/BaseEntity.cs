@@ -1,7 +1,5 @@
-﻿namespace PP.Template.Domain.Common
+﻿namespace PP.Template.Domain.Common;
+public abstract class BaseEntity
 {
-    public abstract class BaseEntity
-    {
-        public required Int64 Id { get; set; }
-    }
+    public required Int64 Id { get; set; }
 }

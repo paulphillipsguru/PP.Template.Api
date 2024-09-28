@@ -1,0 +1,1 @@
+﻿global using PP.Template.Domain.Common;

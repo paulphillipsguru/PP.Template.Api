@@ -1,11 +1,6 @@
-using PP.Template.Api;
-using PP.Template.Infrastructure;
-using PP.Template.Application;
-
 var builder = WebApplication.CreateBuilder(args);
 
 builder.AddServiceDefaults();
-
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddCors();
@@ -25,7 +20,6 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseTemplate();
-
 
 if (app.Environment.IsDevelopment())
 {

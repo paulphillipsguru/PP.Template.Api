@@ -2,29 +2,31 @@
 using PP.Tools.Database;
 
 var builder = Host.CreateDefaultBuilder(args);
-string  action = "up";
+string  action = Actions.Up;
 long version = 0;
 if (args.Length >=2)
 {
     action = args[0].ToLower();
-    if (action == "down")
+    if (action == Actions.Down)
     {
-        version = Convert.ToInt32(args[1]);
+        if (!long.TryParse(args[1], out version))
+        {
+            Console.WriteLine($"Invalid argument, when using {Actions.Down} command, must supply a valid version number.");
+            Environment.Exit(-1);
+        }
     }
 }
 
 builder.ConfigureServices((context, services) =>
 {
-    if (action == "up")
+    if (action == Actions.Up)
     {
         services.AddMigrationService(context.Configuration).Up();
     }
     else
     {
         services.AddMigrationService(context.Configuration).Down(version);
-
-    }
-    
+    }    
 });
 
 var app = builder.Build();

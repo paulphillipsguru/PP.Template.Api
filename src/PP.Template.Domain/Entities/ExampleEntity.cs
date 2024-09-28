@@ -1,9 +1,5 @@
-﻿using PP.Template.Domain.Common;
-
-namespace PP.Template.Domain.Entities
+﻿namespace PP.Template.Domain.Entities;
+public class ExampleEntity : BaseEntity
 {
-    public class ExampleEntity : BaseEntity
-    {
-        public required string Name { get; set; }
-    }
+    public required string Name { get; set; }
 }
