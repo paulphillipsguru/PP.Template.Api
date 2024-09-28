@@ -1,5 +1,5 @@
-﻿namespace PP.Template.Application.UseCases.Example;
-public class ExampleHandler(IApplicationDbContext dbContext) : IRequestHandler<ExampleQuery, ExampleResponse>
+﻿namespace PP.Template.Application.UseCases.Example.Queries;
+public class GetFirstExampleHandler(IApplicationDbContext dbContext) : IRequestHandler<ExampleQuery, ExampleResponse>
 {
     public async Task<ExampleResponse> Handle(ExampleQuery request, CancellationToken cancellationToken)
     {

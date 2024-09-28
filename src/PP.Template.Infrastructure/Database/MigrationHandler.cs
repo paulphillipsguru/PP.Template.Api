@@ -2,9 +2,9 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using PP.Common.Shared.Exceptions;
-using PP.Template.Infrastructure;
 
-namespace PP.Tools.Database
+
+namespace PP.Template.Infrastructure.Database
 {
     public static class MigrationHandler
     {
@@ -12,14 +12,14 @@ namespace PP.Tools.Database
 
         public static ServiceProvider AddMigrationService(this IServiceCollection serviceCollection, IConfiguration configuration)
         {
-            string? connectionString = configuration[ConnectionStringName];
+            string? connectionString = Environment.GetEnvironmentVariable(ConnectionStringName) ?? configuration[ConnectionStringName].ToString();
             if (string.IsNullOrWhiteSpace(connectionString))
             {
                 throw new MissingSqlConnectionStringException(ConnectionStringName);
             }
-           
-            return new ServiceCollection()
-                .AddFluentMigratorCore()
+
+            return serviceCollection
+                 .AddFluentMigratorCore()
                 .ConfigureRunner(rb => rb
                     .AddSqlServer()
                     .WithGlobalConnectionString(connectionString)

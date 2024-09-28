@@ -10,7 +10,9 @@ namespace PP.Template.Infrastructure
     {
         public static void RegisterDatabase(this IServiceCollection services, IConfiguration configuration) {
             services.AddScoped<IApplicationDbContext, ApplicationDbContext>();
-            services.AddDbContext<ApplicationDbContext>(o=> { o.UseSqlServer(configuration["PP.Template.Api:ConnectionString"]); });
+            string connectionString = Environment.GetEnvironmentVariable("PP.Template.Api:ConnectionString") ?? configuration["PP.Template.Api:ConnectionString"].ToString();
+            
+            services.AddDbContext<ApplicationDbContext>(o=> { o.UseSqlServer(connectionString); });
         }
     }
 }

@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Paul Phillips",
+    "defaultName" : "PP.Template.Api",
+    "repository": {
+        "url": "https://github.com/paulphillipsguru",
+        "type": "GitHub"
+    },
+    "projectURL": "https://github.com/paulphillipsguru/PP.Template.Api",
+    "releaseNotes": "Alpha",
+    "classifications": [ "Web", "Application" ],
+    "identity": "PP.Template.Api",
+    "name": "Paul Phillips Template API",
+    "shortName": "API",
+    "sourceName":"PP.Template.Api",
+    "tags": {
+        "language": "C#",
+        "type": "project"
+    },
+    "preferNameDirectory":true
+}

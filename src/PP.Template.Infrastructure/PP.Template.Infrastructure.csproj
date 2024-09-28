@@ -8,11 +8,13 @@
 
   <ItemGroup>
     <PackageReference Include="FluentMigrator" Version="6.0.0" />
+    <PackageReference Include="FluentMigrator.Runner" Version="6.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.0-rc.1.24451.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.0-rc.1.24451.1" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\PP.Common.Shared\PP.Common.Shared.csproj" />
     <ProjectReference Include="..\PP.Template.Application\PP.Template.Application.csproj" />
   </ItemGroup>
 

@@ -1,5 +1,6 @@
 ﻿using Microsoft.Extensions.Hosting;
 using PP.Tools.Database;
+using PP.Template.Infrastructure.Database;
 
 var builder = Host.CreateDefaultBuilder(args);
 string  action = Actions.Up;
