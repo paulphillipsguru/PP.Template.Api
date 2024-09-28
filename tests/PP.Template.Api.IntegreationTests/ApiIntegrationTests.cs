@@ -5,13 +5,11 @@ using System.Net.Http.Json;
 namespace PP.Template.Api.IntegrationTests;
 
 public class ApiIntegrationTests(WebApplicationFactory<IPPTemplateApiMarker> factory) : CustomAppFactory
-{
-    
+{    
     [Fact]
     public async Task GetExample_Return_SingleRecord()
     {
-        //Act
-        
+        //Act        
         var client = factory.CreateClient();
 
         var model = new NewExampleModel { Name  = "Test" };
@@ -19,6 +17,7 @@ public class ApiIntegrationTests(WebApplicationFactory<IPPTemplateApiMarker> fac
         var result = await client.PostAsJsonAsync("/Example", model);
         
         Assert.NotNull(result);
+        
 
     }
 }

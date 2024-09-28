@@ -1,4 +1,5 @@
-﻿using Testcontainers.MsSql;
+﻿using PP.Template.Infrastructure.Database;
+using Testcontainers.MsSql;
 namespace PP.Common.Testing;
 
 public class DatabaseFixture : IAsyncDisposable
@@ -17,6 +18,8 @@ public class DatabaseFixture : IAsyncDisposable
     {
         await container.StartAsync();
         ConnectionString = container.GetConnectionString();
+        MigrationHandler.AddMigrationService(ConnectionString).Up();
+
     }
 
     public async ValueTask DisposeAsync()

@@ -2,4 +2,7 @@
 public  interface IApplicationDbContext
 {
     DbSet<ExampleEntity> Example { get; set; }
+    Task<int> SaveChangesAsync(CancellationToken cancellationToken = default);
+
+
 }

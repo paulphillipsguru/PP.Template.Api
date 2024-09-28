@@ -20,13 +20,14 @@ if (args.Length >=2)
 
 builder.ConfigureServices((context, services) =>
 {
+    const string ConnectionStringName = "PP.Template.Api:ConnectionString";
     if (action == Actions.Up)
     {
-        services.AddMigrationService(context.Configuration).Up();
+        MigrationHandler.AddMigrationService(context.Configuration[ConnectionStringName]).Up();
     }
     else
     {
-        services.AddMigrationService(context.Configuration).Down(version);
+        MigrationHandler.AddMigrationService(context.Configuration[ConnectionStringName]).Down(version);
     }    
 });
 

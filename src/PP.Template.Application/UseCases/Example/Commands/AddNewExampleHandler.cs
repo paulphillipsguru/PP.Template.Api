@@ -9,6 +9,8 @@ namespace PP.Template.Application.UseCases.Example.Commands
         {
             var entity = request.MapToEntity();
             var result = await dbContext.Example.AddAsync(entity);
+            await dbContext.SaveChangesAsync();
+            
             return entity.Id;
         }
     }
