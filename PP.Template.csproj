@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+      <PackageType>Template</PackageType>
+      <PackageVersion>1.0</PackageVersion>
+      <PackageId>PP.Template.Api</PackageId>
+      <Title>Paul Phillips API Template</Title>
+      <Authors>Paul Phillips</Authors>
+      <Description>.NET ASPIRE Initial template based on Clean Architecture</Description>
+      <PackageTags>dotnet-new;templates;pp.template.api</PackageTags>
+      <TargetFramework>.NET9.0</TargetFramework>
+  
+      <IncludeContentInPack>true</IncludeContentInPack>
+      <IncludeBuildOutput>false</IncludeBuildOutput>
+      <ContentTargetFolders>content</ContentTargetFolders>
+    </PropertyGroup>
+  
+    <ItemGroup>
+      <Content Include="**\*" Exclude="**\bin\**;**\obj\**" />
+      <Compile Remove="**\*" />
+    </ItemGroup>
+  
+  </Project>

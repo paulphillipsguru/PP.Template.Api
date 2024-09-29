@@ -6,6 +6,12 @@ A complete starter project to create a API project based on Clean Architecture.
 >
 > This solution is based on a single domain called "Example" and just to provide enough to validate solution.
 
+> [!TIP]
+>
+> You can install the package via dotnet:
+>
+> dotnet new install PP.Template.Api::1.0.0
+
 Tech Stack:
 
 .NET 9
