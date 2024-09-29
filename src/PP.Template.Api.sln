@@ -33,9 +33,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{CE88E93C
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{2F4E1B56-953B-4F77-B919-C69760C3AB1C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PP.Template.Api.IntegrationTests", "..\tests\PP.Template.Api.IntegreationTests\PP.Template.Api.IntegrationTests.csproj", "{F8A1FAA3-142B-4216-AC74-407EF14AC643}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PP.Template.Api.IntegrationTests", "..\tests\PP.Template.Api.IntegreationTests\PP.Template.Api.IntegrationTests.csproj", "{F8A1FAA3-142B-4216-AC74-407EF14AC643}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PP.Common.Testing", "PP.Common.Testing\PP.Common.Testing.csproj", "{43062474-480E-4763-9FBD-D7F603A024EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PP.Common.Testing", "PP.Common.Testing\PP.Common.Testing.csproj", "{43062474-480E-4763-9FBD-D7F603A024EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PP.Template.Application.UnitTests", "..\tests\PP.Template.Application.UnitTests\PP.Template.Application.UnitTests.csproj", "{81AFF469-1C75-4240-932D-9FD76AAD3323}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +89,10 @@ Global
 		{43062474-480E-4763-9FBD-D7F603A024EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{43062474-480E-4763-9FBD-D7F603A024EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{43062474-480E-4763-9FBD-D7F603A024EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81AFF469-1C75-4240-932D-9FD76AAD3323}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81AFF469-1C75-4240-932D-9FD76AAD3323}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81AFF469-1C75-4240-932D-9FD76AAD3323}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81AFF469-1C75-4240-932D-9FD76AAD3323}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -105,6 +111,7 @@ Global
 		{CE88E93C-EAFD-42C5-B68B-C5D71CC03AD2} = {377FEE87-21C5-4279-BF3D-A0A098CE5D16}
 		{F8A1FAA3-142B-4216-AC74-407EF14AC643} = {CE88E93C-EAFD-42C5-B68B-C5D71CC03AD2}
 		{43062474-480E-4763-9FBD-D7F603A024EE} = {00EBDEF2-87FA-49A4-9FE6-534627769F6C}
+		{81AFF469-1C75-4240-932D-9FD76AAD3323} = {CE88E93C-EAFD-42C5-B68B-C5D71CC03AD2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {81B539E0-C0F8-4D25-84FB-84B372995521}
