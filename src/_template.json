@@ -1,7 +1,0 @@
-{
-    "TextReplace": {
-        "Ext": [".cs",".csproj",".sln"],
-        "Replace": {"PP.Template.Api": "{{name_space}}" , "Projects.PP_Template_Api":"Projects.{{name_space | string.replace \".\" \"_\"}}", "PP_Template_Api":"{{name_space | string.replace \".\" \"-\"}}"}
-
-    }
-}
