@@ -2,4 +2,4 @@
 
 namespace PP.Template.Api.IntegrationTests.Fixtures;
 [CollectionDefinition("ApiFixture")]
-public class ApiFixtureCollection : ICollectionFixture<DatabaseFixture> { }
+public class ApiFixtureCollection : ICollectionFixture<CustomFixture> { }
