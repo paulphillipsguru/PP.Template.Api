@@ -1,6 +1,10 @@
-# Clean Architecture Template (API)
+# Clean Architecture Template (API) - WIP
 
-A complete starter project to create a API project.
+A complete starter project to create a API project based on Clean Architecture.
+
+> [!NOTE]
+>
+> This solution is based on a single domain called "Example" and just to provide enough to validate solution.
 
 Tech Stack:
 
