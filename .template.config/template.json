@@ -11,7 +11,7 @@
     "classifications": [ "Web", "Application" ],
     "identity": "PP.Template.Api",
     "name": "Paul Phillips Template API",
-    "shortName": "API",
+    "shortName": "PP.Template.Api",
     "sourceName":"PP.Template",
     "tags": {
         "language": "C#",
